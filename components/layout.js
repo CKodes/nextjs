@@ -1,9 +1,10 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from "./layout.module.css";
+import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = 'Your Name';
+const name = 'Casper';
 export const siteTitle = 'Next.js Sample Website'
 
 export default function Layout({children, home}) {
@@ -41,7 +42,7 @@ export default function Layout({children, home}) {
                     <>
                         <Link href="/">
                             <Image 
-                                priority src="/images/profile.jpg"
+                                priority src="/images/caspertheghost.png"
                                 className={utilStyles.borderCircle}
                                 height={108}
                                 width={108}
@@ -50,7 +51,7 @@ export default function Layout({children, home}) {
                         </Link>
                         <h2 className={utilStyles.headingLg}>
                             <Link href="/"
-                            className='{utilStyles.colorInherit}'>
+                            className={utilStyles.colorInherit}>
                                 {name}
                             </Link>
                         </h2>
